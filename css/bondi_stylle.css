@@ -1,3 +1,214 @@
+:root {
+    --dark-color: #19283f;
+    --green-color: #33d1cc;
+    --red-color: #ff3150;
+    --yellow-color: #ffc400;
+    --section-color: #eff7fa;
+}
+
 body {
     font-family: "Roboto Flex", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    height: 1000rem;
 }
+
+/* ----------------------------- Navigation */
+.navbar {
+    background-color: var(--dark-color);
+}
+
+.nav-link {
+    color: white;
+}
+
+.navbar-toggler {
+    border-color: white;
+}
+
+.navbar-toggler[aria-expanded="true"] {
+    border-color: var(--green-color);
+}
+
+.collapse .fa-solid {
+    color: var(--green-color);
+    background-color: var(--green-color);
+    border-left-color: var(--green-color);
+}
+
+#navbarSupportedContent>div>svg {
+    color: var(--green-color);
+}
+
+#navbarSupportedContent>ul>li>a:hover,
+#navbarSupportedContent>ul>li>a:focus,
+#navbarSupportedContent>ul>li>a:active {
+    color: var(--green-color);
+}
+
+.main-btn {
+    color: var(--yellow-color);
+    background-color: var(--red-color);
+}
+
+.main-btn:hover {
+    color: var(--yellow-color);
+}
+
+/* END */
+/* ----------------------------- landing */
+.landing {
+    width: 100%;
+    margin-top: 70px;
+    height: calc(100vh - 70px);
+    background-color: var(--dark-color);
+}
+
+/* END */
+/* ----------------------------- feature */
+.main-title {
+    margin-bottom: 3rem;
+}
+
+.main-title h1, p {
+    font-weight: 600;
+}
+
+.main-title::after {
+    content: "";
+    width: 8rem;
+    height: 2px;
+    background-color: var(--green-color);
+    bottom: -20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* ------ */
+.feat {
+    height: auto;
+}
+
+.features .row {
+    margin-top: 12.5rem;
+}
+
+.feat .icon-header {
+    height: 20px;
+    width: auto;
+    margin-top: 30px;
+}
+
+.feat .icon-header .number,
+.feat .icon-header .icones {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.feat .icon-header .number {
+    color: var(--section-color);
+    font-size: 12rem;
+}
+
+.feat .icon-header .icones {
+    color: var(--green-color);
+    font-size: 4rem;
+}
+
+.feat h4 {
+    color: var(--yellow-color);
+    font-weight: 600;
+}
+
+/* END */
+/* ----------------------------- we_make */
+.we_make {
+    background-color: var(--section-color);
+}
+
+.we_make .nav .nav-item .nav-link {
+    color: black;
+    font-weight: 600;
+}
+
+.we_make .nav .nav-item .nav-link:hover {
+    color: var(--red-color);
+}
+
+.we_make .nav .nav-item .nav-link:active {
+    color: var(--yellow-color);
+    background-color: var(--red-color);
+}
+
+.we_make .row .box {
+    position: relative;
+    overflow: hidden;
+}
+
+.we_make .box::before {
+    content: attr(data-work);
+    color: white;
+    background-color: #4fcac6c4;
+    font-size: 22px;
+    font-weight: 900;
+
+    margin: 4px 0 0 4px;
+    width: calc(100% - 8px);
+    height: calc(100% - 8px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    transition: 0.3s;
+    transform: translateX(-105%);
+}
+
+.we_make .row .box:hover::before {
+    transform: translateX(0);
+}
+
+/* END */
+/* ----------------------------- meet_team */
+.meet_team {
+    background-color: var(--section-color);
+}
+
+.meet_team h1 {
+    color: var(--yellow-color);
+    font-weight: 800;
+}
+
+.meet_team .card .card-header {
+    background-color: var(--green-color);
+}
+
+/* END */
+/* ----------------------------- subscribe */
+.subscribe {
+    background-color: var(--yellow-color);
+}
+
+.subscribe input {
+    border-bottom: 1px solid white !important;
+    font-weight: 500;
+}
+
+.subscribe input::placeholder {
+    color: white;
+    font-weight: bold;
+}
+
+.subscribe input:focus {
+    border: none;
+    outline: none;
+}
+
+.subscribe .btn {
+    color: var(--yellow-color);
+    background-color: var(--dark-color);
+}
+
+/* END */
