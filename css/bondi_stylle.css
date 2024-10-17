@@ -56,11 +56,16 @@ body {
 
 /* END */
 /* ----------------------------- landing */
-.landing {
+/* v1.0.0 */
+/* .landing {
     width: 100%;
     margin-top: 70px;
     height: calc(100vh - 70px);
     background-color: var(--dark-color);
+} */
+/* v1.1.0 */
+.landing .carousel-item {
+    max-height: calc(100vh);
 }
 
 /* END */
