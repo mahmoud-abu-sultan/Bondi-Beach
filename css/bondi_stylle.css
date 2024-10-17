@@ -216,4 +216,21 @@ body {
     background-color: var(--dark-color);
 }
 
+.footer .social_icons .nav-link,
+.footer .social_icons .fa-brands:hover {
+    color: white;
+}
+
+.footer .social_icons .twitter {
+    background-color: #1da1f2;
+}
+
+.footer .social_icons .linkedin {
+    background-color: #0077b5;
+}
+
+.footer .social_icons .youtube {
+    background-color: #ff0000;
+}
+
 /* END */
